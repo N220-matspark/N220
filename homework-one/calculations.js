@@ -26,8 +26,7 @@ var pizzaSlices = 8;
 var slicePerStudent = 2.5;
 document.getElementById("profPizza").innerHTML +=
   "She could feed " +
-  (pizza * pizzaSlices) / slicePerStudent +
-  ", or just 12 students.";
+  Math.floor((pizza * pizzaSlices) / slicePerStudent) + " students.";
 document.getElementById("profPizza").innerHTML +=
   " That would mean there is " +
   ((pizza * pizzaSlices) % slicePerStudent) +
