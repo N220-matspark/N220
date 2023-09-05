@@ -53,3 +53,26 @@ function test() {
   return false;
 }
 console.log(test());
+
+function totalRec(h,w){
+  let perm = recPerm(h,w);
+  let area = h*w;
+  let recInfo = [perm, area];
+  return recInfo
+}
+
+document.getElementById('multiAnswer').innerHTML = "Perimeter: " + totalRec(recHeight,recWidth)[0] + " ft. " + "<br>Area: " + totalRec(recHeight,recWidth)[1] + " square ft.";
+
+function myFunction(){
+  window.alert('Who goes there?');
+}
+
+function wizard(name,occupation){
+  document.getElementById('future').innerHTML = "Welcome, " + name+", the " + occupation+"!";
+}
+
+function addItem(){
+  let item = prompt("Add Item:");
+  console.log(item);
+  window.alert("You added "+item+" to your list");
+}
