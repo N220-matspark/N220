@@ -32,7 +32,7 @@ extraText.innerHTML += "<br>Remove First: " + tops;
 tops.unshift("tshirt"); //Add value at the beginning
 extraText.innerHTML += "<br>Add value to beginning: " + tops;
 tops.splice(1,1); //Add or Remove any value in an array //targeting "blouse"
-extraText.innerHTML += "<br>:Removing blouse: " + tops;
+extraText.innerHTML += "<br>Removing blouse: " + tops;
 tops.splice(3,0,"blouse","hoodie");//Add blouse and hoodie after button-up
 extraText.innerHTML += "<br>Add blouse and hoodie: " + tops;
 
@@ -50,4 +50,18 @@ const friend = {
 friend.hometown="Indiana"
 document.getElementById('fullName').innerHTML += friend.fullName()+" was born in "+ friend.hometown;
 
+const car = {
+    year: "2007",
+    make: "Saturn",
+    model: "Aura",
+    automatic: true,
+    mpg: 17.5,
+    efficiency: this.mpg>40,
+    fullCarName: function(){
+        return this.year+" "+this.make+" "+this.model;
+    }
+}
 
+document.getElementById("car").innerHTML = "I own a "+ car.fullCarName()+"."
+
+document.getElementById("gasEff").innerHTML = car.fullCarName()+" Efficiency: "+ car.efficiency;
