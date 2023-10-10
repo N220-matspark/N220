@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Test Practice</title>
+ </head>
+ <body>
+    <input id="str" type="text">
+    <button onclick="getStr()">Click</button>
+    <p id="strText"></p>
+    <script>
+        function getStr(){
+           let inputStr = document.getElementById('str').value;
+           let randomNumber = Math.floor(Math.random()*inputStr.length);
+           let strHalf = inputStr.length/2;
+           let sCharacter = inputStr.charAt(randomNumber);
+
+           console.log(randomNumber)
+
+           if (randomNumber > strHalf){
+            document.getElementById("strText").innerHTML = "This letter is in the second half of your string: "+sCharacter;
+           } else if (randomNumber==strHalf){
+            document.getElementById("strText").innerHTML = "This letter is in the middle of your string: "+sCharacter;
+           } else{
+            document.getElementById("strText").innerHTML = "This letter is in the first half of your string: "+sCharacter;
+           }
+
+           
+        }
+    </script>
+ </body>
+</html>

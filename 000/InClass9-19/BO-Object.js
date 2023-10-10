@@ -33,3 +33,7 @@ document.write("<br>Month: " + today.getMonth());
 document.write("<br>Year: " + today.getFullYear());
 document.write("<br>Today's Date: " + today.toDateString());
 document.write("<br>Time: " + today.toTimeString());
+
+randomNumber = Math.floor(Math.random()*10)+1;
+                                      //^
+                                     //length of what you want
