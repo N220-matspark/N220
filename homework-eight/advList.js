@@ -1,9 +1,9 @@
 function addTrashIcon() {
-  var listItems = document.querySelectorAll(".codeList li");
-  var totalItems = listItems.length;
+  let listItems = document.querySelectorAll(".codeList li");
+  let totalItems = listItems.length;
 
   for (var i = 0; i < totalItems; i++) {
-    var trashIcon = document.createElement("img");
+    let trashIcon = document.createElement("img");
 
     trashIcon.setAttribute(
       "src",
@@ -18,8 +18,8 @@ function addTrashIcon() {
 addTrashIcon();
 
 function changeProp(e) {
-  var target = getTarget(e);
-  var targetParent = target.parentNode;
+  let target = getTarget(e);
+  let targetParent = target.parentNode;
 
   if (targetParent.tagName == "LI") {
     targetParent.remove();
