@@ -9,7 +9,7 @@ var ccardAns = document.getElementById("ccAns");
 var phoneAns = document.getElementById("phoneAns");
 
 var stringReg = /.*/;
-var zipReg = /^\d{5}(-\d{4})?$/;
+var zipReg = /^\d{5}([-\s]?\d{4})?$/;
 var ccardReg = /^\d{4}([-.\s]?\d{4}){3}$/;
 var phoneReg = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
 
