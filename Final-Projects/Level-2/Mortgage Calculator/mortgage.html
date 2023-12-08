@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 14px;
+      }
+      form input {
+        width: 400px;
+        height: 20px;
+      }
+      .results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="mortCalculator">
+      <label>Mortgage Calculator</label>
+      <input type="number" placeholder="Loan Amount" id="loanAmt" />
+      <input type="number" placeholder="Loan Terms (in years)" id="loanTerms" />
+      <input
+        type="number"
+        placeholder="Interest Rate"
+        id="interestRte"
+        step="0.1"
+      />
+      <input type="submit" value="Calculate Montly Payment" />
+    </form>
+    <div class="results">
+      <ul id="inputsRes"></ul>
+      <p id="ans"></p>
+    </div>
+    <script src="mortgage.js"></script>
+  </body>
+</html>

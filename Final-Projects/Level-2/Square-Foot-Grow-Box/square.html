@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Foot Grow Box</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      form label {
+        text-align: center;
+        font-size: 20px;
+      }
+      .box {
+        background-color: red;
+      }
+      .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculation">
+      <form action="" id="calculationForm">
+        <label for="">Square Foot Grow Box</label>
+        <input type="number" placeholder="height" id="height" />
+        <input type="number" placeholder="width" id="width" />
+        <input type="submit" value="Calculate" />
+      </form>
+    </div>
+    <div class="results">
+      <div class="ans">
+        <ul id="ans"></ul>
+      </div>
+      <div class="box" id="box"></div>
+    </div>
+
+    <script src="square.js"></script>
+  </body>
+</html>

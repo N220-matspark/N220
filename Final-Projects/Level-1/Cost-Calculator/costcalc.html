@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Calculator</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 14px;
+        width: 40%;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        font-size: 26px;
+        margin: 40px 0;
+      }
+      .results {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 40px;
+      }
+      .costCalcWrapper {
+        position: relative;
+      }
+      .results {
+        position: relative;
+        height: 100px;
+      }
+      .discodes {
+        position: absolute;
+        margin-top: -252px;
+        margin-left: 100px;
+      }
+      h4 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="costCalcWrapper">
+      <h1>Cost Calculator</h1>
+      <form id="costCalcForm">
+        <input type="number" placeholder="Price" step="0.01" id="price" />
+        <input type="text" placeholder="Discount Code" id="disCode" />
+        <input type="submit" value="New Price" />
+      </form>
+      <div class="results">
+        <ul id="results"></ul>
+      </div>
+      <div class="discodes">
+        <h4>Discount Codes:</h4>
+        <ul>
+          <li>SAVE20: 20%</li>
+          <li>JOLLYDAYS: 15%</li>
+          <li>HOLIDAY10: 10%</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="costcalc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+      }
+      form input {
+        width: 300px;
+      }
+      .signupForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 6px solid #000;
+        border-radius: 20px;
+        padding: 40px 20px 50px 20px;
+        background-color: #fff;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      .loginForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 6px solid #000;
+        border-radius: 20px;
+        padding: 40px 20px 50px 20px;
+        background-color: #fff;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      h2 {
+        margin-top: 0px;
+        margin-left: 50px;
+      }
+      body {
+        background-color: #2e8b58;
+      }
+      label {
+        padding: 10px;
+      }
+      .signupForm p {
+        color: #ff1211;
+        text-align: center;
+        margin: -8px;
+        margin-left: 92px;
+        font-size: 14px;
+        display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signupForm">
+      <h2>Sign up!</h2>
+      <form id="registerForm">
+        <div>
+          <label for="username">Username: </label>
+          <input
+            type="text"
+            name="username"
+            id="usernameInput"
+            placeholder="Enter your Username"
+          />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="passwordInput"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <p id="passwordMsg"></p>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="rePasswordInput"
+            placeholder="Re-enter your Password"
+          />
+        </div>
+        <input style="margin-left: 92px" type="submit" value="Register" />
+      </form>
+    </div>
+    <h1 id="registerMsg"></h1>
+    <div class="loginForm">
+      <h2>Login!</h2>
+      <form id="loginForm">
+        <div>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            id="loginUsernameInput"
+            placeholder="Enter your Username"
+          />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="loginPasswordInput"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <input style="margin-left: 92px" type="submit" value="Login" />
+      </form>
+      <h3
+        style="
+          margin-top: 30px;
+          margin-bottom: -10px;
+          text-align: center;
+          display: none;
+          font-size: 26px;
+        "
+        id="loginMsg"
+      ></h3>
+    </div>
+
+    <script src="loginpage.js"></script>
+  </body>
+</html>

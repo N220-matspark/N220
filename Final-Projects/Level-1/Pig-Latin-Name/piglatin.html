@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Latin Name</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 12px;
+        margin-top: 30px;
+      }
+      input {
+        width: 300px;
+      }
+      h1 {
+        text-align: center;
+      }
+      ul {
+        font-size: 18px;
+        margin-top: 40px;
+      }
+      .resultContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pig Latin Name</h1>
+    <form id="pigLatinForm">
+      <input type="text" placeholder="First Name" id="fName" />
+      <input type="text" placeholder="Last Name" id="lName" />
+      <input type="submit" value="Get Name" />
+    </form>
+    <div class="resultContainer">
+      <ul id="results"></ul>
+    </div>
+
+    <script src="piglatin.js"></script>
+  </body>
+</html>

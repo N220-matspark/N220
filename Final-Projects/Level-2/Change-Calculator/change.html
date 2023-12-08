@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Calculator</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 14px;
+        margin-top: 10px;
+      }
+      form input {
+        width: 300px;
+      }
+      .results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="changeCalculator">
+      <label>Change Calculator</label>
+      <input
+        type="number"
+        placeholder="Enter in your change you have"
+        id="changeInput"
+      />
+      <input type="submit" value="Count Change" />
+    </form>
+    <div class="results">
+      <h3>Your Change:</h3>
+      <ul id="results"></ul>
+    </div>
+    <script src="change.js"></script>
+  </body>
+</html>
