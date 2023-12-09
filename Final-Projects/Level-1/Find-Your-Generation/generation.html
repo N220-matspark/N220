@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Generation</title>
+    <style>
+      p {
+        text-align: center;
+        font-size: 19px;
+      }
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      label {
+        margin-right: 5px;
+      }
+      input {
+        margin-left: 5px;
+      }
+      .results {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Find Your Generation</p>
+    <form id="form">
+      <label>Your Age:</label>
+      <input type="number" id="numberInput" placeholder="Enter your age here" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="results">
+      <ul id="results"></ul>
+    </div>
+    <script src="generation.js"></script>
+  </body>
+</html>
